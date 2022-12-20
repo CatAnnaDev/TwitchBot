@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C88879762951BE6900E15E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88879752951BE6900E15E0C /* AppDelegate.swift */; };
+		C88879782951BE6900E15E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88879772951BE6900E15E0C /* SceneDelegate.swift */; };
+		C888797B2951BE6900E15E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88879792951BE6900E15E0C /* LaunchScreen.storyboard */; };
+		C888797E2951BE6900E15E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C888797C2951BE6900E15E0C /* Main.storyboard */; };
+		C88879872951BE6900E15E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88879862951BE6900E15E0C /* AppDelegate.swift */; };
+		C888798A2951BE6900E15E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88879882951BE6900E15E0C /* Main.storyboard */; };
+		C88879912951BE6900E15E0C /* TwitchBot Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C88879902951BE6900E15E0C /* TwitchBot Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C888799B2951BE6900E15E0C /* TwitchBot Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C888799A2951BE6900E15E0C /* TwitchBot Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C88879A12951BE6900E15E0C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C888795C2951BE6800E15E0C /* Main.html */; };
+		C88879A22951BE6900E15E0C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C888795C2951BE6800E15E0C /* Main.html */; };
+		C88879A32951BE6900E15E0C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C888795E2951BE6800E15E0C /* Icon.png */; };
+		C88879A42951BE6900E15E0C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C888795E2951BE6800E15E0C /* Icon.png */; };
+		C88879A52951BE6900E15E0C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C888795F2951BE6800E15E0C /* Style.css */; };
+		C88879A62951BE6900E15E0C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C888795F2951BE6800E15E0C /* Style.css */; };
+		C88879A72951BE6900E15E0C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C88879602951BE6800E15E0C /* Script.js */; };
+		C88879A82951BE6900E15E0C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C88879602951BE6800E15E0C /* Script.js */; };
+		C88879A92951BE6900E15E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88879612951BE6800E15E0C /* ViewController.swift */; };
+		C88879AA2951BE6900E15E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88879612951BE6800E15E0C /* ViewController.swift */; };
+		C88879AB2951BE6900E15E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88879622951BE6900E15E0C /* Assets.xcassets */; };
+		C88879AC2951BE6900E15E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88879622951BE6900E15E0C /* Assets.xcassets */; };
+		C88879AD2951BE6900E15E0C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88879642951BE6900E15E0C /* SafariWebExtensionHandler.swift */; };
+		C88879AE2951BE6900E15E0C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88879642951BE6900E15E0C /* SafariWebExtensionHandler.swift */; };
+		C88879AF2951BE6900E15E0C /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = C88879662951BE6900E15E0C /* _locales */; };
+		C88879B02951BE6900E15E0C /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = C88879662951BE6900E15E0C /* _locales */; };
+		C88879B12951BE6900E15E0C /* images in Resources */ = {isa = PBXBuildFile; fileRef = C88879672951BE6900E15E0C /* images */; };
+		C88879B22951BE6900E15E0C /* images in Resources */ = {isa = PBXBuildFile; fileRef = C88879672951BE6900E15E0C /* images */; };
+		C88879B32951BE6900E15E0C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C88879682951BE6900E15E0C /* manifest.json */; };
+		C88879B42951BE6900E15E0C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C88879682951BE6900E15E0C /* manifest.json */; };
+		C88879B72951BE6900E15E0C /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = C888796A2951BE6900E15E0C /* content.js */; };
+		C88879B82951BE6900E15E0C /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = C888796A2951BE6900E15E0C /* content.js */; };
+		C88879D02951C40B00E15E0C /* subscribers.js in Sources */ = {isa = PBXBuildFile; fileRef = C88879CF2951C40B00E15E0C /* subscribers.js */; };
+		C88879D12951C40B00E15E0C /* subscribers.js in Sources */ = {isa = PBXBuildFile; fileRef = C88879CF2951C40B00E15E0C /* subscribers.js */; };
+		C8FD111F2951CE56005CFB8A /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = C8FD111E2951CE56005CFB8A /* background.js */; };
+		C8FD11202951CE56005CFB8A /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = C8FD111E2951CE56005CFB8A /* background.js */; };
+		C8FD11222951CE5F005CFB8A /* remove_video_ads.js in Resources */ = {isa = PBXBuildFile; fileRef = C8FD11212951CE5F005CFB8A /* remove_video_ads.js */; };
+		C8FD11232951CE5F005CFB8A /* remove_video_ads.js in Resources */ = {isa = PBXBuildFile; fileRef = C8FD11212951CE5F005CFB8A /* remove_video_ads.js */; };
+		C8FD11252951CE68005CFB8A /* block_rules.json in Resources */ = {isa = PBXBuildFile; fileRef = C8FD11242951CE68005CFB8A /* block_rules.json */; };
+		C8FD11262951CE68005CFB8A /* block_rules.json in Resources */ = {isa = PBXBuildFile; fileRef = C8FD11242951CE68005CFB8A /* block_rules.json */; };
+		C8FD11282951CE71005CFB8A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = C8FD11272951CE71005CFB8A /* icons */; };
+		C8FD11292951CE71005CFB8A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = C8FD11272951CE71005CFB8A /* icons */; };
+		C8FD112B2951CE77005CFB8A /* popup in Resources */ = {isa = PBXBuildFile; fileRef = C8FD112A2951CE77005CFB8A /* popup */; };
+		C8FD112C2951CE77005CFB8A /* popup in Resources */ = {isa = PBXBuildFile; fileRef = C8FD112A2951CE77005CFB8A /* popup */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C88879922951BE6900E15E0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C88879562951BE6700E15E0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C888798F2951BE6900E15E0C;
+			remoteInfo = "TwitchBot Extension (iOS)";
+		};
+		C888799C2951BE6900E15E0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C88879562951BE6700E15E0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88879992951BE6900E15E0C;
+			remoteInfo = "TwitchBot Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C88879C42951BE6900E15E0C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C88879912951BE6900E15E0C /* TwitchBot Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88879CB2951BE6900E15E0C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C888799B2951BE6900E15E0C /* TwitchBot Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C888795D2951BE6800E15E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		C888795E2951BE6800E15E0C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C888795F2951BE6800E15E0C /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		C88879602951BE6800E15E0C /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		C88879612951BE6800E15E0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C88879622951BE6900E15E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C88879642951BE6900E15E0C /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		C88879662951BE6900E15E0C /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		C88879672951BE6900E15E0C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		C88879682951BE6900E15E0C /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		C888796A2951BE6900E15E0C /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		C88879722951BE6900E15E0C /* TwitchBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88879752951BE6900E15E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C88879772951BE6900E15E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C888797A2951BE6900E15E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C888797D2951BE6900E15E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C888797F2951BE6900E15E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88879842951BE6900E15E0C /* TwitchBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88879862951BE6900E15E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C88879892951BE6900E15E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C888798B2951BE6900E15E0C /* TwitchBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwitchBot.entitlements; sourceTree = "<group>"; };
+		C88879902951BE6900E15E0C /* TwitchBot Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TwitchBot Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88879952951BE6900E15E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C888799A2951BE6900E15E0C /* TwitchBot Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TwitchBot Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C888799F2951BE6900E15E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88879A02951BE6900E15E0C /* TwitchBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwitchBot.entitlements; sourceTree = "<group>"; };
+		C88879CF2951C40B00E15E0C /* subscribers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = subscribers.js; sourceTree = "<group>"; };
+		C8FD111E2951CE56005CFB8A /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../../../Downloads/VideoAdBlockForTwitch-master/chrome/background.js"; sourceTree = "<group>"; };
+		C8FD11212951CE5F005CFB8A /* remove_video_ads.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = remove_video_ads.js; path = "../../../../Downloads/VideoAdBlockForTwitch-master/chrome/remove_video_ads.js"; sourceTree = "<group>"; };
+		C8FD11242951CE68005CFB8A /* block_rules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = block_rules.json; path = "../../../../Downloads/VideoAdBlockForTwitch-master/chrome/block_rules.json"; sourceTree = "<group>"; };
+		C8FD11272951CE71005CFB8A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = "../../../../Downloads/VideoAdBlockForTwitch-master/chrome/icons"; sourceTree = "<group>"; };
+		C8FD112A2951CE77005CFB8A /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = "../../../../Downloads/VideoAdBlockForTwitch-master/chrome/popup"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C888796F2951BE6900E15E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88879812951BE6900E15E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C888798D2951BE6900E15E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88879972951BE6900E15E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C88879552951BE6700E15E0C = {
+			isa = PBXGroup;
+			children = (
+				C888795A2951BE6800E15E0C /* Shared (App) */,
+				C88879632951BE6900E15E0C /* Shared (Extension) */,
+				C88879742951BE6900E15E0C /* iOS (App) */,
+				C88879852951BE6900E15E0C /* macOS (App) */,
+				C88879942951BE6900E15E0C /* iOS (Extension) */,
+				C888799E2951BE6900E15E0C /* macOS (Extension) */,
+				C88879732951BE6900E15E0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C888795A2951BE6800E15E0C /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C88879612951BE6800E15E0C /* ViewController.swift */,
+				C88879622951BE6900E15E0C /* Assets.xcassets */,
+				C888795B2951BE6800E15E0C /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		C888795B2951BE6800E15E0C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C888795C2951BE6800E15E0C /* Main.html */,
+				C888795E2951BE6800E15E0C /* Icon.png */,
+				C888795F2951BE6800E15E0C /* Style.css */,
+				C88879602951BE6800E15E0C /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C88879632951BE6900E15E0C /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C88879642951BE6900E15E0C /* SafariWebExtensionHandler.swift */,
+				C88879652951BE6900E15E0C /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		C88879652951BE6900E15E0C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8FD112A2951CE77005CFB8A /* popup */,
+				C8FD11272951CE71005CFB8A /* icons */,
+				C8FD11242951CE68005CFB8A /* block_rules.json */,
+				C8FD111E2951CE56005CFB8A /* background.js */,
+				C8FD11212951CE5F005CFB8A /* remove_video_ads.js */,
+				C88879662951BE6900E15E0C /* _locales */,
+				C88879672951BE6900E15E0C /* images */,
+				C88879682951BE6900E15E0C /* manifest.json */,
+				C888796A2951BE6900E15E0C /* content.js */,
+				C88879CF2951C40B00E15E0C /* subscribers.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C88879732951BE6900E15E0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C88879722951BE6900E15E0C /* TwitchBot.app */,
+				C88879842951BE6900E15E0C /* TwitchBot.app */,
+				C88879902951BE6900E15E0C /* TwitchBot Extension.appex */,
+				C888799A2951BE6900E15E0C /* TwitchBot Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C88879742951BE6900E15E0C /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C88879752951BE6900E15E0C /* AppDelegate.swift */,
+				C88879772951BE6900E15E0C /* SceneDelegate.swift */,
+				C88879792951BE6900E15E0C /* LaunchScreen.storyboard */,
+				C888797C2951BE6900E15E0C /* Main.storyboard */,
+				C888797F2951BE6900E15E0C /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		C88879852951BE6900E15E0C /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C88879862951BE6900E15E0C /* AppDelegate.swift */,
+				C88879882951BE6900E15E0C /* Main.storyboard */,
+				C888798B2951BE6900E15E0C /* TwitchBot.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		C88879942951BE6900E15E0C /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C88879952951BE6900E15E0C /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		C888799E2951BE6900E15E0C /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C888799F2951BE6900E15E0C /* Info.plist */,
+				C88879A02951BE6900E15E0C /* TwitchBot.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C88879712951BE6900E15E0C /* TwitchBot (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88879C52951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot (iOS)" */;
+			buildPhases = (
+				C888796E2951BE6900E15E0C /* Sources */,
+				C888796F2951BE6900E15E0C /* Frameworks */,
+				C88879702951BE6900E15E0C /* Resources */,
+				C88879C42951BE6900E15E0C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C88879932951BE6900E15E0C /* PBXTargetDependency */,
+			);
+			name = "TwitchBot (iOS)";
+			productName = "TwitchBot (iOS)";
+			productReference = C88879722951BE6900E15E0C /* TwitchBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C88879832951BE6900E15E0C /* TwitchBot (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88879CC2951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot (macOS)" */;
+			buildPhases = (
+				C88879802951BE6900E15E0C /* Sources */,
+				C88879812951BE6900E15E0C /* Frameworks */,
+				C88879822951BE6900E15E0C /* Resources */,
+				C88879CB2951BE6900E15E0C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C888799D2951BE6900E15E0C /* PBXTargetDependency */,
+			);
+			name = "TwitchBot (macOS)";
+			productName = "TwitchBot (macOS)";
+			productReference = C88879842951BE6900E15E0C /* TwitchBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C888798F2951BE6900E15E0C /* TwitchBot Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88879C12951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot Extension (iOS)" */;
+			buildPhases = (
+				C888798C2951BE6900E15E0C /* Sources */,
+				C888798D2951BE6900E15E0C /* Frameworks */,
+				C888798E2951BE6900E15E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwitchBot Extension (iOS)";
+			productName = "TwitchBot Extension (iOS)";
+			productReference = C88879902951BE6900E15E0C /* TwitchBot Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C88879992951BE6900E15E0C /* TwitchBot Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88879C82951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot Extension (macOS)" */;
+			buildPhases = (
+				C88879962951BE6900E15E0C /* Sources */,
+				C88879972951BE6900E15E0C /* Frameworks */,
+				C88879982951BE6900E15E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwitchBot Extension (macOS)";
+			productName = "TwitchBot Extension (macOS)";
+			productReference = C888799A2951BE6900E15E0C /* TwitchBot Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C88879562951BE6700E15E0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C88879712951BE6900E15E0C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C88879832951BE6900E15E0C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C888798F2951BE6900E15E0C = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					C88879992951BE6900E15E0C = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = C88879592951BE6700E15E0C /* Build configuration list for PBXProject "TwitchBot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C88879552951BE6700E15E0C;
+			productRefGroup = C88879732951BE6900E15E0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C88879712951BE6900E15E0C /* TwitchBot (iOS) */,
+				C88879832951BE6900E15E0C /* TwitchBot (macOS) */,
+				C888798F2951BE6900E15E0C /* TwitchBot Extension (iOS) */,
+				C88879992951BE6900E15E0C /* TwitchBot Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C88879702951BE6900E15E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88879A32951BE6900E15E0C /* Icon.png in Resources */,
+				C888797B2951BE6900E15E0C /* LaunchScreen.storyboard in Resources */,
+				C88879A12951BE6900E15E0C /* Main.html in Resources */,
+				C88879A72951BE6900E15E0C /* Script.js in Resources */,
+				C88879AB2951BE6900E15E0C /* Assets.xcassets in Resources */,
+				C888797E2951BE6900E15E0C /* Main.storyboard in Resources */,
+				C88879A52951BE6900E15E0C /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88879822951BE6900E15E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88879A42951BE6900E15E0C /* Icon.png in Resources */,
+				C88879A62951BE6900E15E0C /* Style.css in Resources */,
+				C888798A2951BE6900E15E0C /* Main.storyboard in Resources */,
+				C88879A82951BE6900E15E0C /* Script.js in Resources */,
+				C88879AC2951BE6900E15E0C /* Assets.xcassets in Resources */,
+				C88879A22951BE6900E15E0C /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C888798E2951BE6900E15E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8FD112B2951CE77005CFB8A /* popup in Resources */,
+				C88879B12951BE6900E15E0C /* images in Resources */,
+				C8FD11282951CE71005CFB8A /* icons in Resources */,
+				C88879B32951BE6900E15E0C /* manifest.json in Resources */,
+				C88879AF2951BE6900E15E0C /* _locales in Resources */,
+				C8FD11222951CE5F005CFB8A /* remove_video_ads.js in Resources */,
+				C88879B72951BE6900E15E0C /* content.js in Resources */,
+				C8FD111F2951CE56005CFB8A /* background.js in Resources */,
+				C8FD11252951CE68005CFB8A /* block_rules.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88879982951BE6900E15E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8FD112C2951CE77005CFB8A /* popup in Resources */,
+				C88879B22951BE6900E15E0C /* images in Resources */,
+				C8FD11292951CE71005CFB8A /* icons in Resources */,
+				C88879B42951BE6900E15E0C /* manifest.json in Resources */,
+				C88879B02951BE6900E15E0C /* _locales in Resources */,
+				C8FD11232951CE5F005CFB8A /* remove_video_ads.js in Resources */,
+				C88879B82951BE6900E15E0C /* content.js in Resources */,
+				C8FD11202951CE56005CFB8A /* background.js in Resources */,
+				C8FD11262951CE68005CFB8A /* block_rules.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C888796E2951BE6900E15E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88879A92951BE6900E15E0C /* ViewController.swift in Sources */,
+				C88879762951BE6900E15E0C /* AppDelegate.swift in Sources */,
+				C88879782951BE6900E15E0C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88879802951BE6900E15E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88879AA2951BE6900E15E0C /* ViewController.swift in Sources */,
+				C88879872951BE6900E15E0C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C888798C2951BE6900E15E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88879AD2951BE6900E15E0C /* SafariWebExtensionHandler.swift in Sources */,
+				C88879D02951C40B00E15E0C /* subscribers.js in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88879962951BE6900E15E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88879AE2951BE6900E15E0C /* SafariWebExtensionHandler.swift in Sources */,
+				C88879D12951C40B00E15E0C /* subscribers.js in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C88879932951BE6900E15E0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C888798F2951BE6900E15E0C /* TwitchBot Extension (iOS) */;
+			targetProxy = C88879922951BE6900E15E0C /* PBXContainerItemProxy */;
+		};
+		C888799D2951BE6900E15E0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C88879992951BE6900E15E0C /* TwitchBot Extension (macOS) */;
+			targetProxy = C888799C2951BE6900E15E0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C888795C2951BE6800E15E0C /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C888795D2951BE6800E15E0C /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		C88879792951BE6900E15E0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C888797A2951BE6900E15E0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C888797C2951BE6900E15E0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C888797D2951BE6900E15E0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C88879882951BE6900E15E0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C88879892951BE6900E15E0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C88879BF2951BE6900E15E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C88879C02951BE6900E15E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C88879C22951BE6900E15E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TwitchBot Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot.Extension;
+				PRODUCT_NAME = "TwitchBot Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C88879C32951BE6900E15E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TwitchBot Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot.Extension;
+				PRODUCT_NAME = "TwitchBot Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C88879C62951BE6900E15E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TwitchBot;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot;
+				PRODUCT_NAME = TwitchBot;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C88879C72951BE6900E15E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TwitchBot;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot;
+				PRODUCT_NAME = TwitchBot;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C88879C92951BE6900E15E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/TwitchBot.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TwitchBot Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot.Extension;
+				PRODUCT_NAME = "TwitchBot Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C88879CA2951BE6900E15E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/TwitchBot.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TwitchBot Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot.Extension;
+				PRODUCT_NAME = "TwitchBot Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C88879CD2951BE6900E15E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/TwitchBot.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TwitchBot;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot;
+				PRODUCT_NAME = TwitchBot;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C88879CE2951BE6900E15E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/TwitchBot.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TwitchBot;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PsykoDev.TwitchBot;
+				PRODUCT_NAME = TwitchBot;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C88879592951BE6700E15E0C /* Build configuration list for PBXProject "TwitchBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88879BF2951BE6900E15E0C /* Debug */,
+				C88879C02951BE6900E15E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C88879C12951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88879C22951BE6900E15E0C /* Debug */,
+				C88879C32951BE6900E15E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C88879C52951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88879C62951BE6900E15E0C /* Debug */,
+				C88879C72951BE6900E15E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C88879C82951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88879C92951BE6900E15E0C /* Debug */,
+				C88879CA2951BE6900E15E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C88879CC2951BE6900E15E0C /* Build configuration list for PBXNativeTarget "TwitchBot (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88879CD2951BE6900E15E0C /* Debug */,
+				C88879CE2951BE6900E15E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C88879562951BE6700E15E0C /* Project object */;
+}

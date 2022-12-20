@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "default_locale": "en",
+
+    "name": "__MSG_extension_name__",
+    "description": "__MSG_extension_description__",
+    "version": "1.0",
+
+    "icons": {
+        "48": "icons/twitch-adblock-48x48.png",
+        "96": "icons/twitch-adblock-96x96.png"
+    },
+    "action": {
+        "default_icon": "icons/twitch-adblock-32x32.png",
+        "default_title": "Twitch Adblock",
+        "default_popup": "popup/index.html"
+    },
+    "options_ui": {
+        "page": "popup/index.html"
+    },
+
+    "content_scripts": [{
+        "js": ["content.js", "subscribers.js"],
+        "matches": ["*://*.twitch.tv/*"]
+    }],
+
+    "permissions": ["declarativeNetRequest", "storage"],
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "block_rules.json"
+        }]
+    },
+    
+    "background": {
+        "service_worker": "background.js"
+    },
+    
+    "web_accessible_resources": [{
+        "resources": ["remove_video_ads.js"],
+        "matches": ["https://*.twitch.tv/*"]
+    }]
+}
